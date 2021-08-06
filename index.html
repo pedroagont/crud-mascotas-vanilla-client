@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mis Mascotas Favoritas 😻</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+<body class="bg-light text-dark">
+
+  <header class="m-3 text-center">
+    <h1 class="display-4">Mis Mascotas Favoritas 😻</h1>
+    <p class="lead">Esta aplicación es una recopilación de mis mascotas favoritas en el mundo de las caricaturas! Espero que les guste! 🥳🐝</p>
+  </header>
+
+  <main>
+    <form class="m-5" id="formCrearMascota">
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="nombre" aria-describedby="nombreHelp">
+      </div>
+      <div class="mb-3">
+        <label for="raza" class="form-label">Raza</label>
+        <input type="text" class="form-control" id="raza" aria-describedby="razaHelp">
+      </div>
+      <div class="mb-3">
+        <label for="caricatura" class="form-label">Caricatura</label>
+        <input type="text" class="form-control" id="caricatura" aria-describedby="caricaturaHelp">
+      </div>
+      <div class="mb-3">
+        <label for="descripcion" class="form-label">Descripción</label>
+        <input type="text" class="form-control" id="descripcion" aria-describedby="descripcionHelp">
+      </div>
+      <div class="mb-3">
+        <label for="imagen" class="form-label">Imagen</label>
+        <input type="text" class="form-control" id="imagen" aria-describedby="imagenHelp">
+      </div>
+      <button type="submit" class="btn btn-primary">Crear mascota!</button>
+    </form>
+
+    <div class="row row-cols-1 row-cols-md-2 g-4 m-5" id="contenedorMascotas">
+      <div class="col">
+        <div class="card">
+          <img src="https://picsum.photos/200/100" class="card-img-top" alt="https://picsum.photos/200/100">
+          <div class="card-body">
+            <h5 class="card-title">Nombre <span class="badge rounded-pill bg-primary">Raza</span></h5>
+            <p class="card-text">Caricatura</p>
+            <p class="small">Descripción</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container-fluid bg-primary py-5 text-center">
+      <p class="small text-light">Mis Mascotas Favoritas ® <script>document.write(new Date().getFullYear())</script></p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+  <script src="app.js" charset="utf-8"></script>
+
+</body>
+</html>
